@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/grs.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="urf-8">
+    <title></title>
+</head>
+<body>
+<!--#insert file="includes/-header2.html"-->
+<div class="section-one">
+    <div class="page-header valign-wrapper">
+        <ul class="row center-align">
+            <li class="col l6 pull-l1 left header-first-section hide-on-med-and-down">
+                <a href="#"><span class="border-r white-text fs20">Доставка и оплата</span></a>
+                <a href="#"><span class="white-text fs15">В магазин</span></a>
+                <a href=""><span>
+                    <img
+                            src="../images/arrowHeader.png"
+                            alt="" class="back-header">
+                </span></a>
+            </li>
+
+            <li class="col l2 m3 pull-m7 pull-s7 header-third-section right">
+                <a href=""><span class="border-r white-text total-price ">52.70 $</span></a>
+                <a href=""><span class="white-text fs15">Кабинет</span></a>
+                <a href=""><img src="../images/cart-header.png" alt=""></a>
+                <div class="active active-search hide-on-med-and-down">
+                    <div>
+                        <a href=""><img src="../images/catalog1.png" alt="" class="product left"></a>
+                        <div class="active-cart-name">
+                            <a href=""><span>52.70$</span></a><br>
+                            <a href=""><span>Найменование</span></a><br>
+                            <a href=""><span>Количество</span></a>
+                        </div>
+                        <div class="btn-active-search-buy center-align"><span>Купить</span></div>
+                    </div>
+                </div>
+                <div class="center-align remind-pass hide-on-med-and-down">
+                    <form action="">
+                        <label for="insertMail" >E-mail</label><br>
+                        <input id="insertMail" type="email">
+                        <label for="remindPass">Вспомнили?</label><br>
+                        <input id="remindPass" type="submit" value="Напомнить">
+                    </form>
+                </div>
+            </li>
+            <li class="col l2 m3 s3 push-m8 push-s6 header-second-section"><div class="nav-wrapper ">
+                <form>
+                    <div class="input-field input-search">
+                        <input id="search" type="search" required class="search-header-input">
+                        <img src="../images/search-header.png" alt="" class="search-header">
+
+                    </div>
+                </form>
+            </div></li>
+            <li class="col m12 s12 hide-on-large-only nav-header-mobile left-align">
+                <ul class="row">
+                    <li class="col m4 s2 center-align"><i class="material-icons white-text">&#xE5D2;</i></li>
+                    <li class="col m2 s3">
+                        <div class="border-r">
+                            <a href=""><span class="fs20">Девайсы</span></a><br>
+                            <a href=""><span class="fs20">Смеси</span></a><br>
+                            <a href=""><span class="fs20">Аксесуары</span></a><br>
+                            <div class="center-align remind-pass hide-on-med-and-down">
+                                <form action="">
+                                    <label for="insertMail" >E-mail</label><br>
+                                    <input id="insertMail" type="email">
+                                    <label for="remindPass">Вспомнили?</label><br>
+                                    <input id="remindPass" type="submit" value="Напомнить">
+                                </form>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="col m1  white-text fs20">Фильтр</li>
+                    <li class="col m5 s4 ">
+                        <div class="filtr-header-mobile">
+                            <div class="filter-items second-filter-item"></div>
+                            <div class="filter-items first-filter-item"></div>
+                        </div>
+
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+    <div class="page-main valign-wrapper">
+        <div class="content valign">
+            <!--#insert file="includes/-cabinetMobPass.html"-->
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/fullHeight.js"></script>
+
+<script>
+    // Initialize collapse button
+    $('.button-collapse').sideNav({
+                menuWidth: 300, // Default is 240
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+            }
+    );
+
+    $('.side-nav, .section-one').fullHeight();
+
+</script>
+</body>
+</html>

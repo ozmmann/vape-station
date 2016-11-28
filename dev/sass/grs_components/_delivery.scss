@@ -1,0 +1,46 @@
+
+.delivery-wrap{
+  background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+
+  @media only screen and (min-width: 992px){
+    padding: 3px;
+
+  }
+  hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #D5BE9A; /* Цвет линии для остальных браузеров */
+    background-color: #D5BE9A; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px; /* Толщина линии */
+  }
+  .delivery-wrap-content{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+  }
+
+  hr{
+    color: #E69A46;
+  }
+  .delivery-title{
+    color: #E69A46;
+  }
+  .delivery-content{
+    background: #fff;
+    height: 100%;
+  }
+  .delivery-img{
+    margin-bottom: 20px;
+  }
+  img{
+
+    position: static;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+}

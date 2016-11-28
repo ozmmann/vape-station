@@ -1,0 +1,25 @@
+
+.delivery-wrap{
+  border: 3px solid #3C2815;
+  padding: 50px;
+  hr{
+    color: #E69A46;
+  }
+  .delivery-title{
+    color: #E69A46;
+  }
+  .delivery-content{
+    background: #fff;
+    height: 100%;
+  }
+  .delivery-img{
+    margin-bottom: 20px;
+  }
+  img{
+
+    position: static;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+}

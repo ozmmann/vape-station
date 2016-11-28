@@ -1,0 +1,154 @@
+.cabinet{
+  position: relative;
+  padding-left: 50px;
+
+   img.img-cabinet{
+   width: 100%;
+     max-width: 400px;
+     @media only screen and (max-width: 992px){
+       max-width: 250px;
+
+     }
+
+
+  }
+  img.img-close{
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 3%;
+    @media only screen and (max-width: 992px){
+     top: 5%;
+
+    }
+  }
+  .title-order{
+    margin: 30px;
+  }
+  hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #D5BE9A; /* Цвет линии для остальных браузеров */
+    background-color: #D5BE9A; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px; /* Толщина линии */
+  }
+  img.img-cabinet3{
+    width: 100%;
+    margin: 20px;
+    max-width: 250px;
+  }
+  .nav-cabinet{
+    margin-bottom: 80px;
+  }
+  .cabinet-form{
+    form{
+      padding-top: 50px;
+    }
+  }
+  div{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .cabinet-client{
+    position: relative;
+    &:before{
+      content: ' ';
+      position: absolute;
+      left: -13%;
+      height: 10%;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      background: #E69A46;
+    }
+  }
+  ul li {
+    padding-left: 5px;
+    @media only screen and (max-width: 992px){
+      margin: 10px;
+
+    }
+  }
+
+
+  input.btn-save{
+    background: none;
+    border: 3px solid black;
+    width: 150px;
+    height: 50px;
+    &:focus{
+      border: 3px solid black;
+    }
+  }
+}
+
+
+
+/* label color */
+.input-field label {
+  font-size: 15px;
+  color: #8E5D36;
+}
+.input-field label.active {
+  font-size: 20px;
+  color: #8E5D36;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+
+  color: #8E5D36;
+}
+.input-field input:not([type=submit]) {
+  border: 1px solid #8E5D36;
+  height: 25px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.input-field input.input-phone {
+  margin-left: 30px;
+  width: calc(100% - 30px);
+  &:before {
+    content: '+380';
+    position: absolute;
+    color: black;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+
+.input-field input.error{
+  border: 1px solid #d25151!important;
+
+}
+
+div.help-block{
+  position: absolute;
+  display: none;
+  height: 20px;
+  top: -30px;
+  color: #d25151;
+  &-error{
+    position: relative;
+    display: block;
+  }
+}

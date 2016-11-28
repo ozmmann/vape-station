@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/grs.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="urf-8">
+    <title></title>
+</head>
+<body>
+<!--#insert file="includes/-header2.html"-->
+<!--#insert file="includes/-page.html"-->
+    <div class="page-main valign-wrapper">
+        <div class="content valign">
+            <!--#insert file="includes/-cabinet2.html"-->
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/fullHeight.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+
+<script>
+    //insert cabinet
+    $('#insert-cabinet').on('click', function () {
+
+        $('.remind-pass').removeClass('displayNone');
+        $('.remind-pass').animate({
+            opacity: 1
+        }, 500)
+        $('.remind-pass').on('click', function () {
+
+            $('.remind-pass').addClass('displayNone')
+
+        })
+
+
+    });
+
+    //active-cart
+
+    $('#active-cart').on('click', function () {
+
+        $('.active-cart').removeClass('displayNone');
+        $('.active-cart').animate({
+            opacity: 1
+        }, 500)
+        $('.close-active-cart').on('click', function () {
+
+            $('.active-cart').addClass('displayNone')
+
+        })
+
+
+    });
+    //range
+    $("#range-filter").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        postfix: "uah"
+    });
+    // Initialize collapse button
+    $('.button-collapse').sideNav({
+                menuWidth: 300, // Default is 240
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+            }
+    );
+
+    $('.side-nav, .section-one').fullHeight();
+
+</script>
+</body>
+</html>

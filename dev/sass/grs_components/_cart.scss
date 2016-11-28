@@ -1,0 +1,116 @@
+
+.cart-page{
+  padding: 0;
+  .margin-center{
+    margin: 0 auto;
+  }
+  .title-form-new-customer{
+    &:before{
+      content: '1';
+      text-align: center;
+      line-height: 24px;
+      vertical-align: middle;
+      font-size: 22px;
+      position: absolute;
+      color: #fff;
+      left: -13%;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      background: #e69a46;
+
+    }
+  }
+  .wrap-new-customer{
+    span.caret{
+      width: 12px;
+      height: 12px;
+      transform: rotate(-48deg);
+      right: 3%;
+      top: 17%;
+      color: transparent;
+      border-left: 1px solid #8E5D36;
+      border-bottom: 1px solid #8E5D36;
+    }
+  }
+  input.select-dropdown {
+    border: 1px solid #8E5D36!important;
+    height: 25px;
+    padding-left: 10px;
+  }
+  .cart-your-order{
+    background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    padding: 3px;
+    height: 100%;
+    img{
+      width: 100%;
+    }
+    img.close{
+      width: 20px;
+      height: auto;
+      transform: translateX(-20px);
+    }
+    .cart-your-order-wrap{
+      background: #fff;
+      div.row{
+        margin: 0;
+      }
+    }
+    .cart-your-order-title{
+      line-height: 75px;
+      display: block;
+      font-size: 30px;
+      width: 90%;
+      border-bottom: 1px solid #D0B691;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .total-you-order{
+      padding-top: 250px;
+      padding-bottom: 50px;
+      border-top: 1px solid #D0B691;
+    }
+  }
+  .cart-signIn-form{
+    input{
+      border: 1px solid black;
+      height: 25px;
+
+    }
+    select{
+      display: block;
+      height: 25px;
+    }
+    label{
+      position: static;
+    }
+  }
+  .cart-signIn{
+    img{
+      margin: 30px;
+      width: 35%;
+    }
+  }
+  div.btn-signIn{
+
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    padding: 3px;
+    cursor: pointer;
+    div{
+
+      height: 100%;
+      background: #fff;
+    }
+  }
+}

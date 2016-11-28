@@ -1,0 +1,132 @@
+$font-path: '../fonts/MuseoCyrl/MuseoCyrl' !default;
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}100.otf") format("opentype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}300.otf") format("opentype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}500.otf") format("opentype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}700.otf") format("opentype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}900.otf") format("opentype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}100Italic.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}300Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}500Italic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}700Italic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "MuseoCyrl";
+    src: url("#{$font-path}900Italic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: "UrbanCircus";
+    src: url("../fonts/UrbanCircusDeco/UrbanCircusDeco") format("opentype");
+
+}
+
+
+body{
+    font-family: "MuseoCyrl";
+    font-weight: 100;
+
+
+}
+.urbanCircus{
+    font-family: "UrbanCircus";
+}
+
+.fw100{
+    font-weight: 100!important;
+}
+.fw300{
+    font-weight: 300;
+}
+.fw500{
+    font-weight: 500;
+}
+.fw700{
+    font-weight: 700;
+}
+.fw900{
+    font-weight: 900;
+}
+
+
+.fs30{
+    font-size: 30px;
+}
+.fs25{
+    font-size: 25px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs15{
+    font-size: 15px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs13{
+    font-size: 13px;
+}
+.fs10{
+    font-size: 10px;
+}
+
+.fc-orange{
+    color: #E69A46!important;
+}
+.fc-brown{
+    color: #8E5D36!important;
+}
+.fc-dark-brown{
+    color: #3B2313!important;
+}
+.fc-light-brown{
+    color: #AA4A00!important;
+}
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}

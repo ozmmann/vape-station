@@ -1,0 +1,219 @@
+
+.catalog-wrap{
+  width: 90%;
+  margin: 0 auto;
+  .sort li{
+    margin: 10px 0;
+    padding: 0 30px 0 30px;
+    color: #fff;
+    & :first-child {
+      padding-right: 30px;
+    }
+  }
+  .count-page{
+    text-align: center;
+  }
+  .title-catalog{
+    line-height: 75px;
+    padding-right: 30px;
+    border-right: 2px solid #fff;
+  }
+  .item-width-destop{
+    @media only screen and (min-width: 1200px){
+      width: 20%!important;
+    }
+
+  }
+  .catalog-background {
+    background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    padding: 0 0 6px 0 !important;
+    .catalog-wrap-content {
+
+      .page-device-modal{
+        width: 40%;
+        min-width: 600px;
+        min-height: 600px;
+        @media only screen and (max-width: 993px){
+          width: 95%;
+          left: 27%;
+        }
+        height: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-25%);
+        background: #fff;
+        z-index: 1002;
+        padding: 30px;
+        border: 6px solid #CFB690;
+        .img-wrap-device{
+          width: 50%;
+          display: inline-block;
+        }
+        .modal-priceProduct{
+          display: block;
+        }
+        input.select-dropdown{
+          height: 25px;
+          //max-width: 150px;
+
+        }
+        .btn-modal-buy{
+          width: 120px;
+          height: 40px;
+          margin-top: 70px;
+          background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+          background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+          background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+          background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+          background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+          padding: 1px 1px 1px 2px;
+          div{
+            height: 100%;
+            background: #fff;
+          }
+        }
+        .modal-curent-btn{
+          display: inline-block;
+          padding-left: 10px;
+          cursor: pointer;
+          span:nth-child(even){
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            padding: 0 7px 0 7px;
+          }
+        }
+        img.close-modal{
+          position: absolute;
+          top: 3%;
+          right: 3%;
+          height: 10%;
+          width: 30px;
+          height: auto;
+          cursor: pointer;
+        }
+        .wrap-device-content{
+          width: 50%;
+          display: inline-block;
+          input.select-dropdown{
+            width: 50%;
+            padding: 0 10px 0 10px;
+            transform: translate(72%, 29%);
+            border: 1px solid black;
+          }
+          span.caret{
+            width: 12px;
+            height: 12px;
+            transform: rotate(-48deg);
+            right: 8%;
+            top: 36%;
+            color: transparent;
+            border-left: 1px solid #8E5D36;
+            border-bottom: 1px solid #8E5D36;
+          }
+          label{
+            top: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+      .slick-btn{
+        display: block;
+        width: 23px;
+        height: 23px;
+        background: linear-gradient(to right, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+        transform: rotate(45deg) translateX(8px);
+        &-wrap{
+          position: absolute;
+          width: 16px;
+          height: 32px;
+          overflow: hidden;
+          top: 50%;
+          cursor: pointer;
+          &.prev{
+            transform: translateY(-50%);
+            left: - 32px;
+          }
+          &.next{
+            transform: translateY(-50%);
+            right: -32px;
+          }
+        }
+      }
+      .slick-prev{
+        border: 20px solid transparent;
+        border-width: 20px;
+        border-style: solid;
+        padding: 20px;
+        box-sizing: border-box;
+        background:
+                linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+        width: 20px;
+      }
+      .catalog{
+        width: 50%;
+      }
+      background: #fff;
+      margin-bottom: 0;
+      padding-top: 20px;
+      .wrap-overflow{
+        padding: 0 0 20px 0;
+        overflow: hidden;
+        .wrap-items{
+          width: 200%;
+          transition: 1s;
+          &:hover{
+            width: 150%;
+            transform: translateX(-30%);
+          }
+          .wrap-text-block{
+            transform: translateX(-43%);
+          }
+          .wrap-items-first-section{
+            border-left: 2px solid #CFB690;
+            width: 50%;
+            img {
+              width: auto;
+              height: 250px;
+              margin: 0 auto;
+            }
+          }
+          .block-bottom{
+              width: 10px;
+              height: 20px;
+              position: absolute;
+              top: 100%;
+              left: 90%;
+            z-index: 1000;
+              background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+              background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+              background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+              background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+              background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+
+            }
+          }
+          .wrap-items-second-section {
+            width: 40%;
+
+
+            }
+          }
+        }
+      }
+    }
+
+
+div.btn-buy{
+  width: 80px;
+  background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  padding: 3px;
+
+  div{
+    height: 100%;
+    background: #fff;
+  }
+}

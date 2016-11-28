@@ -1,0 +1,241 @@
+header {
+  ul.side-nav {
+    &.fixed {
+      //max-width: 380px;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+      background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+      background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+      background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+      background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+      background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+
+      li {
+        &.logo {
+          margin-bottom: 20px;
+        }
+
+        &.menu {
+          margin-bottom: 50px;
+        }
+
+        &.address-schedule {
+          padding: 0 10px;
+          line-height: 20px;
+
+          .schedule {
+            padding-right: 45px;
+            background: url(../images/header/phone.png) center right no-repeat;
+          }
+        }
+
+        a {
+          color: #fff;
+          font-size: 25px;
+        }
+      }
+
+      ul {
+        &.nav-menu {
+          width: 100%;
+          hr {
+            width: 132px;
+
+          }
+          li {
+            a {
+              color: #fff;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+div.userView {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+img.logo {
+  width: 90%;
+  max-width: 240px;
+  height: auto;
+
+}
+
+.width {
+  @media only screen and (max-width: 1) {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+}
+
+div.nav-wrapper {
+  transform: translateX(-5%);
+}
+
+.navbar-search {
+  //padding: 0 50px 0 50px;
+  img.plus {
+
+    position: absolute;
+    top: 0;
+    left: 194px;
+  }
+  div.input-field {
+
+    padding: 0 25px;
+    line-height: 0;
+
+    input:not([type=submit]) {
+      width: 100%;
+      max-width: 200px;
+      border: none;
+      height: 30px;
+      opacity: 0.5;
+      background: #fff;
+      border-radius: 10px;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    .plus {
+      background: url("../images/header/plus_header.png");
+      border: 0;
+      padding: 0;
+      margin: 0;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      margin-left: 5px;
+
+    }
+
+  }
+
+}
+
+.paddingLeft {
+  padding-left: 15px;
+}
+
+.social-header {
+  margin: 0 20px 0 20px;
+}
+
+/*---------------------------------------------------------------------*/
+a#logo {
+  height: auto;
+}
+
+nav.top-nav {
+  padding: 10px 0;
+  background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+
+  .search-left {
+    @media only screen and (min-width: 992px) {
+      position: relative;
+      left: 10% !important;
+    }
+  }
+  .page-header {
+
+    min-width: 600px;
+    @media only screen and (min-width: 992px) {
+      //height: 100px;
+    }
+    @media only screen and (min-width: 992px) {
+      //min-width: 1000px;
+    }
+
+    .maxW {
+      max-width: 100px;
+    }
+
+  }
+
+  i {
+    font-size: 72px;
+    cursor: pointer;
+  }
+
+  ul {
+    width: 100%;
+
+    li {
+      display: inline-block;
+      a {
+        line-height: 20px;
+      }
+    }
+  }
+
+  img.search-header {
+    position: absolute;
+    top: 8%;
+    left: 135px;
+  }
+
+  div.input-search {
+    @media only screen and (min-width: 992px) {
+      position: relative;
+      left: 70% !important;
+    }
+  }
+
+  input.search-header-input {
+    width: 150px;
+    border: none;
+    height: 30px;
+    opacity: 0.5;
+    background: #fff;
+    border-radius: 10px;
+
+  }
+  .nav-header-mobile {
+    padding-top: 30px;
+    i {
+      font-size: 72px;
+      cursor: pointer;
+    }
+    div {
+      padding: 0 5px;
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .page-main {
+    background: url(../images/background.png) repeat-y;
+    background-size: cover;
+
+    .content {
+      width: 90%;
+      height: 90%;
+      min-height: 600px;
+      border: 3px solid #E5C595;
+      margin: 60px auto;
+      background: #fff;
+      padding: 50px;
+
+      @media only screen and (min-width: 992px) {
+        border: none;
+      }
+      @media only screen and (max-width: 992px) {
+        padding: 0;
+      }
+    }
+  }
+}
