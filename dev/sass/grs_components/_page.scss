@@ -12,7 +12,7 @@
   .search-left{
     @media only screen and (min-width: 992px){
       position: relative;
-      left: 10%!important;
+      //left: 10%!important;
     }
   }
   .page-header{
@@ -133,13 +133,13 @@
   input:focus{
     //@media only screen and (min-width: 992px){
         width: 220px;
-    transform: translateX(-70px);
+    //transform: translateX(-70px);
     }
 }
 .header-third-section{
   min-width: 200px;
   margin-left: 195px;
-  margin-top: 15px;
+  //margin-top: 15px;
 
   @media only screen and (max-width: 600px){
     min-width: 200px;

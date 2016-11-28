@@ -40,7 +40,6 @@ function showHideLangList(){
 }
 $(document).ready(function(){
     $(".button-collapse").sideNav();
-    $("#grs-feedback").grsFeedback();
     $('#lang-but').dropdown();
     $('#lang-list li').each(function(){
         langListW += $(this).width();
@@ -52,6 +51,10 @@ $(document).ready(function(){
         if($(this).width() > 992){
             showHideLangList();
         }
+    });
+
+    $(document).ready(function() {
+        $('select').material_select();
     });
 
 });

@@ -3,27 +3,25 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="page-header">
-                    <ul class="row">
-                        <li class="col l4 m12 push-l7">
+                    <ul class="row valign-wrapper">
+                        <li class="col l6 m12 s12 push-l6 valign">
                             <ul class="row">
-                                <li class="col s4 push-s8 push-m8 pull-l6 header-second-section input-search search-left">
+                                <li class="col l6 m6 s6 header-second-section input-search search-left">
                                     <div class="nav-wrapper">
                                         <form>
                                             <div class="input-field ">
                                                 <input id="search" type="search" required
                                                        class="search-header-input input-left">
-                                                <img src="../images/search-header.png" alt="" class="search-header">
-
+                                                <div class="clearfix"></div>
                                             </div>
                                         </form>
                                     </div>
                                 </li>
-                                <li class="col s4 pull-s3 push-l5 header-third-section">
-                                    <a href=""><span class="border-r white-text total-price ">52.70 $</span></a>
-                                    <span class="white-text fs15" id="insert-cabinet">Кабинет</span>
-                                    <img src="../images/cart-header.png" alt="" class="catalog-cart"
-                                         id="active-cart">
-
+                                <li class="col l6 m6 s6 header-third-section">
+                                    <div class="cart-login">
+                                        <div class="cart"><a href=""><span class="white-text total-price ">52.70 $</span></a></div>
+                                        <div class="login border-l"><span class="white-text fs15" id="insert-cabinet">Кабинет</span></div>
+                                    </div>
                                     <!--активный поиск-->
 
                                     <div class="active active-search hide">
@@ -90,37 +88,31 @@
                             </ul>
 
                         </li>
-                        <li class="col l6 m12 pull-l4">
+                        <li class="col l6 m12 s12 pull-l6 valign">
                             <ul class="row">
-                                <li class="col s4 hide-on-large-only center-align"><i
-                                        class="material-icons white-text">&#xE5D2;</i></li>
                                 <li class="col s2 l3">
-                                    <div class="border-r maxW">
+                                    <div class="border-r">
                                         <a href=""><span class="white-text fs15">Девайсы</span></a>
                                         <a href=""><span class="white-text fs15">Смеси</span></a>
                                         <a href=""><span class="white-text fs15">Аксесуары</span></a>
                                     </div>
                                 </li>
-                                <li class="col s2 l2 white-text fs15">Фильтр</li>
                                 <li class="col s4 l4">
                                     <span class="white-text title-range">Цена</span>
                                     <input type="text" id="range-filter">
 
                                 </li>
-                                <li class="col s4 l3 radio-form-catalog hide-on-med-and-down">
+                                <li class="col s4 l5 radio-form-catalog hide-on-med-and-down">
                                     <form action="#">
-                                        <p>
-                                            <input name="group1" type="radio" id="test1"/>
-                                            <label for="test1" class="white-text">Mechanical Modes</label>
-                                        </p>
-                                        <p>
-                                            <input name="group1" type="radio" id="test2"/>
-                                            <label for="test2" class="white-text">Regulated modes</label>
-                                        </p>
-                                        <p>
-                                            <input name="group1" type="radio" id="test3"/>
-                                            <label for="test3" class="white-text">Starter kids</label>
-                                        </p>
+                                        <div class="input-field col s12">
+                                            <select>
+                                                <option value="" disabled selected>Выберите бренд</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                            <label>Бренд</label>
+                                        </div>
                                     </form>
                                 </li>
 
