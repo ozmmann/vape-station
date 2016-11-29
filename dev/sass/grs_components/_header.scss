@@ -5,6 +5,7 @@ header {
       @media only screen and (max-width: 992px) {
         width: 100%;
       }
+
       background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
       background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
       background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
@@ -142,7 +143,11 @@ nav.top-nav {
   background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
   background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
   background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-
+  header & {
+    @media only screen and (max-width: 992px) {
+      height: auto;
+    }
+  }
   .search-left {
     @media only screen and (min-width: 992px) {
       position: relative;
@@ -151,7 +156,7 @@ nav.top-nav {
   }
   .page-header {
 
-    min-width: 600px;
+    //min-width: 600px;
     @media only screen and (min-width: 992px) {
       //height: 100px;
     }
@@ -199,38 +204,58 @@ nav.top-nav {
 
       .input-search {
         input.search-header-input {
-          background: rgba(255,255,255,0.5) url('http://localhost:8080/images/search-header.png') right center no-repeat;
-          padding-right: 25px;
-          border-right: 5px solid rgba(255,255,255, 0);
+          background: rgba(255,255,255,.5);
+          padding-right: 30px;
           margin: 0;
           float: right;
           padding-left: 15px;
-          -webkit-transition: width 1s ease-in-out;
-          -moz-transition: width 1s ease-in-out;
-          -o-transition: width 1s ease-in-out;
-          transition: width 1s ease-in-out;
+          -moz-transition: width 700ms ease-in-out;
+          -o-transition: width 700ms ease-in-out;
+          transition: width 700ms ease-in-out;
 
           &:focus {
             width: 100%;
           }
         }
+        button.material-icons.do-search {
+          background: transparent;
+          border: none;
+          color: rgba(255,255,255,.5);
+          right: 0;
+          &:hover {
+            color: rgba(255,255,255, 1);
+          }
+        }
       }
 
       .cart-login {
-        float: right;
+        min-width: 150px;
+        @media only screen and (max-width: 992px) {
+          float: left;
+        }
         a {
           padding: 0;
         }
         .cart {
           display: inline-block;
           background: url("../images/cart-header.png") left center no-repeat;
-          padding: 0 0 20px 35px;
+          padding: 10px 0 10px 35px;
         }
 
         .login {
           display: inline-block;
           padding-left: 10px;
 
+        }
+      }
+
+      .button-collapse {
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        i {
+          font-size: 48px;
         }
       }
     }
@@ -297,4 +322,10 @@ nav.top-nav {
 
 .border-l{
   border-left: 1px solid #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .valign-wrapper{
+    display: inherit;
+  }
 }

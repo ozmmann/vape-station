@@ -137,7 +137,7 @@
     }
 }
 .header-third-section{
-  min-width: 200px;
+  //min-width: 200px;
   margin-left: 195px;
   //margin-top: 15px;
 
@@ -328,13 +328,13 @@
   span{
     position: relative;
 
-    &.total-price:after {
-      content: "2 items";
-      font-size: 12px;
-      position: absolute;
-      top: 30px;
-      left: 18%;
-    }
+    //&.total-price:after {
+    //  content: "2 items";
+    //  font-size: 12px;
+    //  position: absolute;
+    //  top: 30px;
+    //  left: 18%;
+    //}
   }
   img{
     position: absolute;
