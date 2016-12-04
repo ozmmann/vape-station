@@ -24,32 +24,7 @@ img {
 
 
 
-.btn-buy{
-  width: 80px;
-  display: inline-block;
-  background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-  background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-  background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-  padding: 3px;
-  button{
-    height: 100%;
-    background: #fff;
-    border: none;
-    width: 100%;
-    &:hover {
-      background: transparent -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-      background: transparent -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-      background: transparent linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-      color: white ;
-    }
 
-    &:active {
-      background: transparent -webkit-linear-gradient(-51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-      background: transparent -moz-linear-gradient(-51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-      background: transparent linear-gradient(-51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-    }
-  }
-}
 
 button:focus {
   outline: none;
@@ -57,14 +32,40 @@ button:focus {
   color: white;
 }
 
-.input-field {
-  .select-wrapper {
-    input.select-dropdown {
-      border: none;
-      border-bottom: 1px solid #8e5d36;
-      height: 25px;
-      margin-bottom: 30px;
-      padding-left: 0px;
+body form {
+  .input-field {
+    .select-wrapper {
+      input.select-dropdown {
+        border: none  !important;
+        border-bottom: 1px solid #8e5d36 !important;
+        height: 25px !important;
+        margin-bottom: 30px !important;
+        padding: 0px !important;
+      }
     }
   }
+}
+
+
+button.dash {
+  border: none;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 15%;
+    border-bottom: 1px solid #8e5d36;
+    width: 70%;
+  }
+}
+
+.dib {
+  display: inline-block !important;
+}
+
+.db {
+  display: block !important;
 }
