@@ -157,12 +157,10 @@
                                             </div>
 
                                         </div>
-                                        <div class="login border-l hide-on-small-and-down"><a id="insert-cabinet"
-                                                                                              class="modal-trigger popup-trigger"
-                                                                                              href="#modallogin"><span
-                                                class="white-text fs15">Кабинет</span></a>
-                                            <!--Войти в кабинет/напомнить пароль-->
-
+                                        <div class="login border-l">
+                                            <a id="insert-cabinet" class="modal-trigger popup-trigger hide-on-small-and-down" href="#modallogin">
+                                                <span class="white-text fs15">Кабинет</span>
+                                            </a>
                                             <div id="modallogin" class="modal popup popup-active center-align remind-pass popup-form">
                                                 <div class="modal-content">
                                                     <form class="row cabinet-form">
@@ -253,7 +251,9 @@
     <!--class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>-->
     <!--</div>-->
     <div class="valign-wrapper">
+
         <ul id="nav-mobile" class="side-nav fixed white-text valign" style="transform: translateX(0%);">
+            <a href="#" id="close-sidenav" class=""><img src="../images/close-round-white.svg" width="45px" alt="Закрыть"></a>
             <a href=""><i class="material-icons"></i></a>
             <li class="logo">
                 <a id="logo" href="#" class="brand-logo">
@@ -267,6 +267,12 @@
                     <li><a href="#!">Доставка и оплата</a></li>
                     <li><a href="#!">Наши магазины</a></li>
                     <li>
+                        <hr>
+                    </li>
+                    <li class="hide-on-med-and-up">
+                        <a href="#modallogin" class="modal-trigger side-nav-modal">Кабинет</a>
+                    </li>
+                    <li class="hide-on-med-and-up">
                         <hr>
                     </li>
 

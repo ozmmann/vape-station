@@ -207,14 +207,8 @@ nav.top-nav {
       }
 
       .remind-pass {
-        //position: absolute;
         width: 300px;
         top: 40px;
-        right: -30px;
-        //background: #fff;
-        //padding: 20px 10px;
-        //border: 3px solid #E5C595;
-        //z-index: 1000;
 
         .input-field {
           .input-gradient {
@@ -372,6 +366,10 @@ nav.top-nav {
           display: inline-block;
           padding-left: 10px;
 
+          @media only screen and (max-width: 600px) {
+            border: none;
+          }
+
         }
       }
 
@@ -444,10 +442,11 @@ nav.top-nav {
     border: 3px solid #CBAD8B;
     z-index: 1000;
     right: -1.5em;
-    top: calc(100% + 20px);
+    top: calc(100% + 20px)!important;
     //padding: 30px 10px;
     left: inherit;
     max-height: none;
+    overflow: inherit;
     @media only screen and (max-width: 600px) {
       width: calc(320px - 3em);
     }
@@ -489,6 +488,10 @@ nav.top-nav {
 
     &.popup-form {
       width: 300px;
+    }
+
+    .remind-pass {
+      right: -30px;
     }
   }
 
@@ -558,4 +561,10 @@ nav.top-nav {
 
 nav ul li a:hover, nav ul li.active {
   background-color: transparent;
+}
+.lean-overlay {
+  @media only screen and (min-width: 600px) {
+    //display: none !important;
+    opacity: 0 !important;
+  }
 }
