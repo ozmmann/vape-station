@@ -57,8 +57,14 @@ button.dash {
     position: absolute;
     bottom: -5px;
     left: 15%;
-    border-bottom: 1px solid #8e5d36;
+    border-bottom: 1px solid;
     width: 70%;
+    transition: 1s;
+
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
   }
 }
 

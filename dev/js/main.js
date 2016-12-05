@@ -42,13 +42,24 @@ function showHideLangList() {
 function popupToModal(toModal) {
     if (toModal) {
         $('.popup').each(function () {
-            $(this).parent().find('.popup-trigger').addClass('modal-trigger');
             $(this).removeClass('popup-active');
+            if($(this).has('.popup-bottom')){
+                $(this).addClass('bottom-sheet');
+            }
+            if($(this).has('.popup-fixed-footer')){
+                $(this).addClass('modal-fixed-footer');
+            }
+
         });
     } else {
         $('.popup').each(function () {
-            $(this).parent().find('.popup-trigger').removeClass('modal-trigger');
             $(this).addClass('popup-active');
+            if($(this).has('.popup-bottom')){
+                $(this).removeClass('bottom-sheet');
+            }
+            if($(this).has('.popup-fixed-footer')){
+                $(this).removeClass('modal-fixed-footer');
+            }
         });
     }
 }

@@ -142,61 +142,7 @@ main{
    display: none;
   }
 
-  .remind-pass{
-    position: absolute;
-    width: 250px;
-    top: 40px;
-    left: -30px;
-    background: #fff;
-    padding: 10px 0 0 0;
-    border: 3px solid #E5C595;
-    z-index: 1000;
-    input{
-      margin-bottom: 10px;
-    }
-    &:before{
-      content: ' ';
-      position: absolute;
-      top: -35px;
-      left: 178px;
-      border: 17px solid transparent;
-      border-bottom: 17px solid #E5C595;
-      display: block;
-      width: 0;
-      height: 0;
-    }
-    &:after{
-      content: ' ';
-      position: absolute;
-      top: -23px;
-      left: 185px;
-      border: 11px solid transparent;
-      border-bottom: 11px solid #fff;
-      display: block;
-      width: 0;
-      height: 0;
 
-    }
-    span.title-insert-cabinet{
-      position: absolute;
-      top: -21px;
-      left: 27px;
-    }
-    form{
-
-      input{
-        width: 80%;
-        height: 20px;
-
-        &:last-child{
-          background: none;
-          border: none;
-        }
-      }
-
-    }
-
-  }
 
   span{
     position: relative;
