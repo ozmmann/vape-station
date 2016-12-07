@@ -538,3 +538,9 @@ nav ul li a:hover, nav ul li.active {
     opacity: 0 !important;
   }
 }
+
+#close-sidenav {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
