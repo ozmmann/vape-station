@@ -1,7 +1,7 @@
 function initParallax() {
     $('.parallax').each(function () {
         var content = $(this).parent().find('.parallax-content');
-        console.log(content.outerHeight());
+
         if (content.outerHeight() > 500) {
             $(this).parent().height(content.outerHeight() + 100);
             $(this).parallax();
@@ -71,7 +71,7 @@ $(document).ready(function () {
         draggable: true
     });
 
-    $('.side-nav, .section-one').fullHeight();
+    $('.side-nav, .section-one, .section-title').fullHeight($('header').height());
 
 
     $('#lang-but').dropdown();
@@ -105,5 +105,57 @@ $(document).ready(function () {
 
     });
 
+    //range
+    $("#range-filter").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        postfix: "uah"
+    });
 
+    $(window).on('load resize', function () {
+        var divs = $grid.find('.wrap-overflow');
+        if (divs.parent().hasClass("items-row")) {
+            $('.items-row').unwrap();
+            divs.unwrap();
+        }
+        $grid.width('');
+        $grid.isotope();
+    });
+
+    var $grid = $('.products-wrapper').isotope({
+        itemSelector: '.wrap-overflow'
+    });
+
+    $grid.on('arrangeComplete', function () {
+        var self = $(this),
+            divs = self.find('.wrap-overflow'),
+            itemWidth = self.find('.wrap-overflow').outerWidth(),
+            contentWidth = self.width(),
+            itemsPerRow = contentWidth / itemWidth;
+
+        // self.width(Math.floor(itemsPerRow)*itemWidth);
+
+        if (divs.parent().hasClass("items-row")) {
+            $('.items-row').unwrap();
+            divs.unwrap();
+        } else {
+            for (var i = 0; i < divs.length; i += itemsPerRow) {
+                divs.slice(i, i + itemsPerRow).wrapAll("<div class='items-row'></div>");
+            }
+            $('.items-row').wrap("<div class='items-row-wrapper'></div>");
+        }
+
+        var biggestHeight = 0;
+        $(".items-row").each(function(){
+            var items = $(this).find('.wrap-overflow');
+            items.each(function () {
+                if ($(this).outerHeight() > biggestHeight ) {
+                    biggestHeight = $(this).outerHeight();
+                }
+            });
+
+        });
+        $(".items-row").height(biggestHeight);
+    });
 });

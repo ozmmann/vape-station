@@ -1,92 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/grs.css" media="screen,projection"/>
+    <!--#insert file="includes/-head.html"-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="urf-8">
-    <title></title>
 </head>
 <body>
-<!--#insert file="includes/-header2.html"-->
-<!--#insert file="includes/-page2.html"-->
+<!--#insert file="includes/-header.html"-->
 
-    <div class="page-main">
-        <div class="catalog-wrap">
-            <!--#insert file="includes/-catalogModal.html"-->
-        </div>
-
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript" src="js/fullHeight.js"></script>
-    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+<!--#insert file="includes/-catalogModal.html"-->
+<!--#insert file="includes/-footer.html"-->
 
 
+<script>
+    //insert cabinet
+    $('#insert-cabinet').on('click', function () {
 
-    <script>
-        //insert cabinet
+        $('.remind-pass').removeClass('displayNone');
+        $('.remind-pass').animate({
+            opacity: 1
+        }, 500)
         $('#insert-cabinet').on('click', function () {
 
-            $('.remind-pass').removeClass('displayNone');
-            $('.remind-pass').animate({
-                opacity: 1
-            }, 500)
-            $('#insert-cabinet').on('click', function () {
+            $('.remind-pass').addClass('displayNone')
 
-                $('.remind-pass').addClass('displayNone')
-
-            })
+        })
 
 
-        });
+    });
 
-        //active-cart
+    //active-cart
 
-        $('#active-cart').on('click', function () {
+    $('#active-cart').on('click', function () {
 
-            $('.active-cart').removeClass('displayNone');
-            $('.active-cart').animate({
-                opacity: 1
-            }, 500)
-            $('.close-active-cart').on('click', function () {
+        $('.active-cart').removeClass('displayNone');
+        $('.active-cart').animate({
+            opacity: 1
+        }, 500)
+        $('.close-active-cart').on('click', function () {
 
-                $('.active-cart').addClass('displayNone')
+            $('.active-cart').addClass('displayNone')
 
-            })
-
-
-        });
-        //range
-        $("#range-filter").ionRangeSlider({
-            type: "double",
-            min: 0,
-            max: 1000,
-            postfix: "uah"
-        });
-
-        //modal window
-        $('.page-device-modal').hide();
-        $('.catalog-nameProduct2').on('click', function () {
+        })
 
 
+    });
+    //range
+    $("#range-filter").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        postfix: "uah"
+    });
+
+    //modal window
+    $('.page-device-modal').hide();
+    $('.catalog-nameProduct2').on('click', function () {
+
+
+        $('.page-device-modal').animate({
+            opacity: 'show'
+
+        }, 500);
+
+        $('.close-modal').on('click', function () {
             $('.page-device-modal').animate({
-               opacity: 'show'
-
-            }, 500);
-
-            $('.close-modal').on('click', function () {
-                $('.page-device-modal').animate({
-                    opacity: 'hide'
+                opacity: 'hide'
 
 
-                }, 500)
-            })
-        });
+            }, 500)
+        })
+    });
 
 
-    </script>
+</script>
 </body>
 </html>

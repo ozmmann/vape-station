@@ -527,36 +527,6 @@ nav.top-nav {
     padding: 10px;
   }
 
-  .btn-buy {
-    display: inline-block;
-    background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-    background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-    background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-    padding: 3px;
-    max-width: 100%;
-    height: 45px;
-    font-size: 18px;
-    cursor: pointer;
-    button, a {
-      height: 100%;
-      background: #fff;
-      border: none;
-      width: 100%;
-      padding: 10px !important;
-      &:hover {
-        background: transparent -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-        background: transparent -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-        background: transparent linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-        color: white;
-      }
-
-      &:active {
-        background: transparent -webkit-linear-gradient(-51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-        background: transparent -moz-linear-gradient(-51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-        background: transparent linear-gradient(-51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
-      }
-    }
-  }
 }
 
 nav ul li a:hover, nav ul li.active {
