@@ -71,7 +71,7 @@ $(document).ready(function () {
         draggable: true
     });
 
-    $('.side-nav, .section-one, .section-title').fullHeight();
+    $('.side-nav, .section-one').fullHeight();
 
 
     $('#lang-but').dropdown();
@@ -114,6 +114,7 @@ $(document).ready(function () {
     });
 
     $(window).on('load resize', function () {
+        $('.section-title').fullHeight(-$('header').height());
         var divs = $grid.find('.wrap-overflow');
         if (divs.parent().hasClass("items-row")) {
             $('.items-row').unwrap();
@@ -123,7 +124,7 @@ $(document).ready(function () {
         $grid.isotope();
     });
 
-    var $grid = $('.products-wrapper').isotope({
+    var $grid = $('.products-wrapper-isotope').isotope({
         itemSelector: '.wrap-overflow'
     });
 

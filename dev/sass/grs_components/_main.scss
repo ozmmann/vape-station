@@ -1,15 +1,18 @@
-.section-title{
+.section-title {
   width: 100%;
 
   background: url(../images/title.png) center center no-repeat;
-  background-size: cover;
+  //background-size: initial;
+  background-position: center right;
+
   text-align: center;
-  &.page-main{
+  &.page-main {
     //background: transparent;
   }
-  span{
+  span {
     margin: 0 auto;
     font-size: 32px;
+    padding-left: 20px;
   }
 
 }
@@ -23,10 +26,6 @@ img {
   max-width: 100%;
 }
 
-
-
-
-
 button:focus {
   outline: none;
   background-color: transparent !important;
@@ -37,7 +36,7 @@ body form {
   .input-field {
     .select-wrapper {
       input.select-dropdown {
-        border: none  !important;
+        border: none !important;
         border-bottom: 1px solid #8e5d36 !important;
         height: 25px !important;
         margin-bottom: 30px !important;
@@ -46,7 +45,6 @@ body form {
     }
   }
 }
-
 
 button.dash {
   border: none;
@@ -69,7 +67,6 @@ button.dash {
   }
 }
 
-
 div.btn-buy {
   display: inline-block;
   background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
@@ -86,7 +83,9 @@ div.btn-buy {
     border: none;
     width: 100%;
     padding: 10px !important;
-    line-height: 10px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, .87);
+    display: inline-block;
     &:hover {
       background: transparent -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
       background: transparent -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
@@ -109,3 +108,87 @@ div.btn-buy {
 .db {
   display: block !important;
 }
+
+
+
+/* label color */
+.input-field label {
+  font-size: 15px;
+  color: #8E5D36;
+}
+.input-field label.active {
+  font-size: 20px;
+  color: #8E5D36;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+
+  color: #8E5D36;
+}
+.input-field input:not([type=submit]) {
+  border: 1px solid #8E5D36;
+  height: 25px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.input-field input.input-phone {
+  margin-left: 30px;
+  width: calc(100% - 30px);
+  &:before {
+    content: '+380';
+    position: absolute;
+    color: black;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+
+input[type=email]:focus {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border: 1px solid #8E5D36;
+  box-shadow: 0 1px 0 0 #8E5D36;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+
+.input-field input.error{
+  border: 1px solid #d25151!important;
+
+}
+
+div.help-block{
+  position: absolute;
+  display: none;
+  height: 20px;
+  top: -30px;
+  color: #d25151;
+  &-error{
+    position: relative;
+    display: block;
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-selection { background: #8E5D36; color: #fff; }
+::selection { background: #8E5D36; color: #fff; }

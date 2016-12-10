@@ -102,7 +102,7 @@ div.nav-wrapper {
       opacity: 0.5;
       background: #fff;
       border-radius: 10px;
-      padding: 0;
+      padding: 0 10px;
       margin: 0;
       display: inline-block;
     }
@@ -221,6 +221,8 @@ nav.top-nav {
               background: -webkit-linear-gradient(-51deg, #654b2e 0%, #3f2b17 55%, #3c2815 59%, #201003 100%);
               background: -moz-linear-gradient(-51deg, #654b2e 0%, #3f2b17 55%, #3c2815 59%, #201003 100%);
               background: linear-gradient(-51deg, #654b2e 0%, #3f2b17 55%, #3c2815 59%, #201003 100%);
+              padding-bottom: 3px;
+              margin-bottom: 14px;
             }
 
             input:not([type=submit]) {

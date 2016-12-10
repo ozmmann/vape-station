@@ -1,4 +1,8 @@
 main{
+  .sub-title {
+    width: 90%;
+    margin: 0 auto;
+  }
   .padding-top38{
     padding-top: 38px;
   }
@@ -82,14 +86,15 @@ main{
   .page-main{
     background: url(../images/background.png) repeat-y;
     background-size: cover;
+    padding: 40px 0;
 
     .content{
       width: 90%;
       height: 90%;
-      min-height: 600px;
+      //min-height: 600px;
       border: 3px solid #E5C595;
-      margin: 40px auto;
-      background: #fff;
+      margin: 0px auto;
+      background-color: #fff;
       padding: 50px;
 
       @media only screen and (min-width: 992px){
