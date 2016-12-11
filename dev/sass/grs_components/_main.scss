@@ -101,6 +101,13 @@ div.btn-buy {
   }
 }
 
+.delete-product {
+  background: transparent url("../images/close.png") center center no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
 .dib {
   display: inline-block !important;
 }
@@ -114,7 +121,7 @@ div.btn-buy {
 /* label color */
 .input-field label {
   font-size: 15px;
-  color: #8E5D36;
+  color: #8E5D36 !important;
 }
 .input-field label.active {
   font-size: 20px;
@@ -144,7 +151,7 @@ div.btn-buy {
 }
 
 /* label underline focus color */
-.input-field input[type=text]:focus {
+.input-field input:not([type=submit]):focus {
   border: 1px solid #8E5D36;
   box-shadow: 0 1px 0 0 #8E5D36;
 }
@@ -192,3 +199,60 @@ div.help-block{
 
 ::-moz-selection { background: #8E5D36; color: #fff; }
 ::selection { background: #8E5D36; color: #fff; }
+
+.tabs {
+  white-space: normal;
+  overflow: visible;
+  height: auto;
+  .tab {
+    height: auto;
+    overflow: visible;
+    margin-bottom: 5px;
+    a {
+      color: #3B2313;
+      width: 100%;
+      padding: 0 10px;
+      height: auto;
+      overflow: visible;
+      line-height: 25px;
+      font-size: 20px;
+      transition: color .28s ease;
+      &.active, &:hover {
+        background-color: transparent;
+        color: #3B2313;
+      }
+    }
+  }
+
+  .indicator {
+    background-color: #3B2313;
+    background: #3B2313 -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: #3B2313 -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: #3B2313 linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  }
+}
+
+
+#buyproduct {
+  h4 {
+    font-size: 2em;
+  }
+  .input-field {
+    input {
+      margin-bottom: 15px;
+    }
+    &:last-child {
+      input {
+        margin-bottom: 0;
+      }
+    }
+    label {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 400px;
+  }
+
+}

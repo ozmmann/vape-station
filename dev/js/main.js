@@ -41,7 +41,7 @@ function showHideLangList() {
 
 function popupToModal(toModal) {
     if (toModal) {
-        $('.popup').each(function () {
+        $('.modal').each(function () {
             if ($(this).hasClass('popup-bottom')) {
                 $(this).addClass('bottom-sheet');
             }
@@ -64,6 +64,19 @@ function popupToModal(toModal) {
         });
     }
 }
+
+function updateSpinner(obj)
+{
+    var contentObj = document.getElementById("count");
+    var value = parseInt(contentObj.value);
+    if(obj.id == "down") {
+        value--;
+    } else {
+        value++;
+    }
+    contentObj.value = value;
+}
+
 $(document).ready(function () {
     $('.button-collapse').sideNav({
         menuWidth: 320, // Default is 240
@@ -162,5 +175,8 @@ $(document).ready(function () {
 
     $('#close-sidenav').click(function () {
         $('.button-collapse').sideNav('hide');
-    })
+    });
+
+    $('ul.tabs').tabs();
+
 });
