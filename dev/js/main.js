@@ -121,8 +121,8 @@ $(document).ready(function () {
     //range
     $("#range-filter").ionRangeSlider({
         type: "double",
-        min: 0,
-        max: 1000,
+        min: $(this).data('min'),
+        max: $(this).data('max'),
         postfix: "uah"
     });
 
