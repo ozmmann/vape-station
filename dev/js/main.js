@@ -65,11 +65,10 @@ function popupToModal(toModal) {
     }
 }
 
-function updateSpinner(obj)
-{
+function updateSpinner(obj) {
     var contentObj = document.getElementById("count");
     var value = parseInt(contentObj.value);
-    if(obj.id == "down") {
+    if (obj.id == "down") {
         value--;
     } else {
         value++;
@@ -126,6 +125,11 @@ $(document).ready(function () {
         postfix: "uah"
     });
 
+    $('#form_filter').find('#brand_select').on('change', function () {
+        form = this.form;
+        $(form).submit();
+    });
+
     $(window).on('load resize', function () {
         $('.section-title').fullHeight(-$('header').height());
         var divs = $grid.find('.wrap-overflow');
@@ -148,7 +152,7 @@ $(document).ready(function () {
             contentWidth = self.width(),
             itemsPerRow = contentWidth / itemWidth;
 
-        self.width(Math.floor(itemsPerRow)*itemWidth);
+        self.width(Math.floor(itemsPerRow) * itemWidth);
 
         if (divs.parent().hasClass("items-row")) {
             $('.items-row').unwrap();
@@ -161,10 +165,10 @@ $(document).ready(function () {
         }
 
         var biggestHeight = 0;
-        $(".items-row").each(function(){
+        $(".items-row").each(function () {
             var items = $(this).find('.wrap-overflow');
             items.each(function () {
-                if ($(this).outerHeight() > biggestHeight ) {
+                if ($(this).outerHeight() > biggestHeight) {
                     biggestHeight = $(this).outerHeight();
                 }
             });

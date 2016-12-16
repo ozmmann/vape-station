@@ -158,10 +158,13 @@
 
                                         </div>
                                         <div class="login border-l">
-                                            <a id="insert-cabinet" class="modal-trigger popup-trigger hide-on-small-and-down" href="#modallogin">
+                                            <a id="insert-cabinet"
+                                               class="modal-trigger popup-trigger hide-on-small-and-down"
+                                               href="#modallogin">
                                                 <span class="white-text fs15">Кабинет</span>
                                             </a>
-                                            <div id="modallogin" class="modal popup popup-active center-align remind-pass popup-form">
+                                            <div id="modallogin"
+                                                 class="modal popup popup-active center-align remind-pass popup-form">
                                                 <div class="modal-content">
                                                     <form class="row cabinet-form">
                                                         <div class="input-field col s12">
@@ -241,15 +244,14 @@
                                         <a href=""><span class="white-text fs15">Аксесуары</span></a>
                                     </div>
                                 </li>
-                                <li class="col s6 m6 l4">
-                                    <span class="white-text title-range">Цена</span>
-                                    <input type="text" id="range-filter" data-min="300" data-max="1700">
-
-                                </li>
-                                <li class="col s4 l5 radio-form-catalog hide-on-med-and-down">
-                                    <form action="#">
+                                <form id="form_filter" action="/index.php">
+                                    <li class="col s6 m6 l4">
+                                        <span class="white-text title-range">Цена</span>
+                                        <input type="text" id="range-filter" data-min="300" data-max="17300">
+                                    </li>
+                                    <li class="col s4 l5 radio-form-catalog hide-on-med-and-down">
                                         <div class="input-field col s12">
-                                            <select>
+                                            <select id="brand_select">
                                                 <option value="" disabled selected>Выберите бренд</option>
                                                 <option value="1">Option 1</option>
                                                 <option value="2">Option 2</option>
@@ -257,8 +259,9 @@
                                             </select>
                                             <label>Бренд</label>
                                         </div>
-                                    </form>
-                                </li>
+                                    </li>
+                                </form>
+
                             </ul>
                         </li>
                     </ul>
@@ -272,7 +275,8 @@
     <div class="valign-wrapper">
 
         <ul id="nav-mobile" class="side-nav fixed white-text valign" style="transform: translateX(0%);">
-            <a href="#" id="close-sidenav" class="hide-on-med-and-up"><img src="../images/close-round-white.svg" width="45px" alt="Закрыть"></a>
+            <a href="#" id="close-sidenav" class="hide-on-med-and-up"><img src="../images/close-round-white.svg"
+                                                                           width="45px" alt="Закрыть"></a>
             <li class="logo">
                 <a id="logo" href="#" class="brand-logo">
                     <img class="logo" src="../images/logo.png">
