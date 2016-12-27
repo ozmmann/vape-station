@@ -99,8 +99,10 @@ $(document).ready(function () {
             showHideLangList();
         }
         else {
+            $('.checkout').hide();
             popupToModal(true);
         }
+
     });
 
     $(document).ready(function () {
@@ -183,4 +185,32 @@ $(document).ready(function () {
 
     $('ul.tabs').tabs();
 
+    jQuery(".input-phone").mask("(000) 000-00-00", {
+        placeholder: "(ХХ) ХХХ-ХХ-ХХ"
+    });
+
+    $('#move_to_checkout').click(function () {
+        $('.checkout').show();
+        $('.move-to-checkout').css({
+            "-webkit-transform": "translateX(-50%)",
+            "-ms-transform": "translateX(-50%)",
+            "transform": "translateX(-50%)"
+        });
+    });
+
+    $('#move_to_cart').click(function () {
+
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+
+        $('.move-to-checkout').css({
+            "-webkit-transform": "translateX(0)",
+            "-ms-transform": "translateX(0)",
+            "transform": "translateX(0)"
+        });
+
+        $('.checkout').delay(600).hide(0);
+
+    });
 });

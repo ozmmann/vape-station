@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--#insert file="includes/-head.html"-->
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <title>Vape Station Kyiv</title>
+    <style>
+        li.address-schedule a {
+            font-size: 14px !important;
+            padding: 0 !important;
+            line-height: 39px !important;
+            display: inline-block !important;
+            height: auto !important;
+        }
+        li a {
+            display: inline-block !important;
+            padding: 0 !important;
+        }
+        header ul.side-nav.fixed li.address-schedule .schedule {
+            background-position-y: bottom;
+        }
+        main .section-title{
+            padding: 50px;
+            position: relative;
+        }
+
+        main .grad {
+            background-color: #3B2313;
+            background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+            background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+            background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+        }
+
+        a.button-collapse.top-nav.full {
+            line-height: 1.5;
+        }
+
+        @media only screen and (max-width: 600px) {
+            main .section-title{
+                padding: 20px;
+                padding-top: 70px;
+            }
+            .section-title {
+                background-position-x: center !important;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .lef-ml {
+                text-align: left;
+            }
+        }
+        header ul.side-nav.fixed li.address-schedule .schedule {
+            background: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!--#insert file="includes/-header_mock.html"-->
+<!--#insert file="includes/-main_mock.html"-->
+<!--#insert file="includes/-footer.html"-->
+<script>
+    $('document').ready(function () {
+        $('.section-title').fullHeight(-100);
+    });
+</script>
+</body>
+</html>

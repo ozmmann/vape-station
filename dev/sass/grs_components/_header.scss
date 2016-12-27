@@ -14,11 +14,12 @@ header {
 
       li {
         &.logo {
-          margin-bottom: 20px;
+          margin-bottom: 0px;
+          margin-top: 20px;
         }
 
         &.menu {
-          margin-bottom: 50px;
+          margin-bottom: 20px;
         }
 
         &.address-schedule {
@@ -29,11 +30,6 @@ header {
             padding-right: 45px;
             background: url(../images/header/phone.png) center right no-repeat;
           }
-        }
-
-        a {
-          color: #fff;
-          font-size: 25px;
         }
       }
 
@@ -47,7 +43,9 @@ header {
           li {
             a {
               color: #fff;
-              font-size: 25px;
+              font-size: 20px;
+              line-height: 30px;
+              height: 30px;
             }
           }
         }
@@ -64,7 +62,7 @@ div.userView {
 
 img.logo {
   width: 90%;
-  max-width: 240px;
+  max-width: 140px;
   height: auto;
 
 }
@@ -138,6 +136,7 @@ a#logo {
 
 nav.top-nav {
   padding: 10px 0;
+  height: 100px;
   background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
   background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
   background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);

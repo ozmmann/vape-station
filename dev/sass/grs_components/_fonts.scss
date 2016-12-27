@@ -1,4 +1,5 @@
 $font-path: '../fonts/MuseoCyrl/MuseoCyrl' !default;
+$font-urban-path: '../fonts/UrbanCircusDeco/';
 @font-face {
     font-family: "MuseoCyrl";
     src: url("#{$font-path}100.otf") format("opentype");
@@ -57,7 +58,7 @@ $font-path: '../fonts/MuseoCyrl/MuseoCyrl' !default;
 }
 @font-face {
     font-family: "UrbanCircus";
-    src: url("../fonts/UrbanCircusDeco/UrbanCircusDeco") format("opentype");
+    src: url("#{$font-urban-path}UrbanCircusDeco.otf") format("opentype");
 
 }
 

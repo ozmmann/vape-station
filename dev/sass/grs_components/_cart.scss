@@ -4,6 +4,14 @@
   @media only screen and (min-width: 600px) {
     padding-top: 20px;
   }
+  @media only screen and (max-width: 992px) {
+    width: 200%;
+  }
+
+  .move-to-checkout {
+    transition: transform 1s ease;
+  }
+
   .margin-center{
     margin: 0 auto;
   }
@@ -23,7 +31,7 @@
 
   .title-form-new-customer{
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
     display: inline-block;
     line-height: 17px;
     &.n1 {
@@ -79,6 +87,10 @@
     background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
     padding: 3px;
     height: 100%;
+    height: 602px;
+    @media only screen and (max-width: 992px) {
+      background: none;
+    }
     img{
       width: 100%;
     }
@@ -87,13 +99,18 @@
       height: auto;
       transform: translateX(-20px);
     }
+    .products {
+      overflow-y: auto;
+      max-height: 375px;
+    }
     .cart-your-order-wrap{
       position: relative;
       background: #fff;
+      width: 100%;
       height: 100%;
       display: inline-block;
       padding: 10px;
-      padding-bottom: 60px;
+      padding-bottom: 30px;
       div.row{
         margin: 0;
       }
@@ -107,10 +124,15 @@
       text-align: center;
     }
     .total-you-order{
+      //position: absolute;
+      //bottom: 10px;
+      //width: 100%;
+      //right: 0px;
+    }
+    .cart-checkout-btn {
       position: absolute;
-      bottom: 10px;
-      width: 100%;
-      right: 0px;
+      bottom:25px;
+      left:0;
     }
   }
   .cart-signIn-form{
@@ -153,3 +175,10 @@
   }
 }
 
+#regular_customer {
+  .input-field {
+    input {
+      max-width: 320px;
+    }
+  }
+}

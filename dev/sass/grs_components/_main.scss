@@ -12,7 +12,6 @@
   span {
     margin: 0 auto;
     font-size: 32px;
-    padding-left: 20px;
   }
 
 }
@@ -124,7 +123,7 @@ div.btn-buy {
   color: #8E5D36 !important;
 }
 .input-field label.active {
-  font-size: 20px;
+  font-size: 15px;
   color: #8E5D36;
 }
 /* label focus color */
@@ -138,15 +137,21 @@ div.btn-buy {
   margin-bottom: 30px;
   padding-left: 10px;
 }
-.input-field input.input-phone {
-  margin-left: 30px;
-  width: calc(100% - 30px);
-  &:before {
-    content: '+380';
-    position: absolute;
-    color: black;
-    top: 10%;
-    left: 10%;
+.input-field {
+  &.input-phone-wrapper {
+    &:before {
+      content: '+380';
+      position: absolute;
+      color: #8E5D36;
+      top: 4px;
+      //top: 10%;
+      //left: 10%;
+    }
+
+    input.input-phone {
+      margin-left: 40px;
+      width: calc(100% - 40px);
+    }
   }
 }
 
@@ -215,7 +220,10 @@ div.help-block{
       height: auto;
       overflow: visible;
       line-height: 25px;
-      font-size: 20px;
+      font-size: 16px;
+      @media only screen and (max-width: 360px) {
+        font-size: 14px;
+      }
       transition: color .28s ease;
       &.active, &:hover {
         background-color: transparent;
